@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f7fa;
+  color: #2d2d2d;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+header {
+  background: linear-gradient(to right, #2f80ed, #56ccf2);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+header p a {
+  color: #e0f7ff;
+  text-decoration: underline;
+}
+
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+section h2 {
+  border-left: 4px solid #2f80ed;
+  padding-left: 0.75rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.skills ul,
+.education ul,
+.certifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li,
+.education li,
+.certifications li {
+  background: #eef4fc;
+  margin: 0.4rem 0;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+.experience h3 {
+  margin-top: 1.8rem;
+  color: #2f80ed;
+  font-size: 1.1rem;
+}
+
+.download {
+  text-align: center;
+  padding: 2rem;
+}
+
+.download a {
+  background-color: #2f80ed;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(47, 128, 237, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.download a:hover {
+  background-color: #1c64d1;
+  transform: translateY(-3px);
+}
+
+footer {
+  background-color: #2f80ed;
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #e6f3ff;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  .download a {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
